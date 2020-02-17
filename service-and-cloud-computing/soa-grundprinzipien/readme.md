@@ -1,4 +1,6 @@
-## Definition SOA
+[TOC]
+
+# Definition SOA
 
 **S**ervice-**o**riented **A**rchitecture ist ein Paradigma für die Organisation und Verwendung verteilter Fähigkeiten, die unter der Kontrolle verschiedender Besitzerdomänen stehen können.
 
@@ -6,7 +8,7 @@ Der Begriff SOA wurde durch das [**OASIS-Referenzmodell**](http://www.oasis-open
 Das Referenzmodell ist normativ, dient also als abstraktes Framework. Es enthält vereinheitlichte Konzepte, Grundsätze und Beziehungen innerhalb eines bestimmten Problemfeldes. Dadurch ist es prinzipiell unabhängig von spezifischen Standards, Technologien und Implementationen und hat weiterhin eine hohe Relevanz als Grundlage für die Entwicklung spezifischer Referenzen und konkreter Architekturen.
 
 
-## Abgrenzung zu anderen Architekturprinzipien
+# Abgrenzung zu anderen Architekturprinzipien
 
 Durch die inhärente Intuitivität und Allgemeinheit des konzeptuellen Begriffs SOA ist es aus heutiger Sicht eine nicht triviale Frage, welche anderen Architekturprinzipien hiervon abgegrenzt werden können, weil sich SOA als natürliches Architekturmuster in vielen Bereichen etabliert hat (und z.T. als selbstverständlich betrachtet wird):
 
@@ -14,13 +16,13 @@ Durch die inhärente Intuitivität und Allgemeinheit des konzeptuellen Begriffs 
 - Unter EAI (**E**nterprise **A**pplication **I**ntegration) werden die einzelnen Dienstteilnehmer über einen zentralen Message-Bus (auch: Middleware) verbunden, wodurch statt n*m nur noch jeweils eine Schnittstelle zur Middleware notwendig ist.
 
 
-## Was sind Services?
+# Was sind Services?
 
 Ein **Service** ist ein Mechanismus, der den Zweck hat, die Nutzung einer oder mehreren Fähigkeiten über eine wohldefinierte Schnittstelle zu ermöglichen. Die Schnittstelle muss konsistent zu den Anforderungen und Richtlinien in der Dienstbeschreibung sein. Die Dienstbeschreibung wird hierbei als verbindlicher Vertrag zwischen dem Service User und dem Service Provider betrachtet.
 Wichtig ist, an dieser Stelle einzubeziehen, dass die Implementation des Services selbst nicht Teil des Vertrags ist. Das heißt, es steht dem Service Provider frei, wie dieser den Service implementiert.
 
 
-## Sichtbarkeit, Interaktion und Wirkung
+# Sichtbarkeit, Interaktion und Wirkung
 
 Im Kontext der SOA wurden drei wichtige Konzepte definiert: Sichtbarkeit, Interaktion und Wirkung.
 
@@ -36,7 +38,7 @@ Im Kontext von Services wird die Sichtbarkeit durch eine Dienstbeschreibung real
 Bei Services geschieht die Interaktion über einen Nachrichtenaustausch, zum Beispiel über Request-Response. Zuletzt wird die Wirkung realisiert durch die Zustandsänderung beteiligter Objekte und die Rückgabe des Ergebnis als Antwort an den Service Consumer.
 
 
-## Welche Teilnehmer gibt es in einer SOA Referenzarchitektur?
+# Welche Teilnehmer gibt es in einer SOA Referenzarchitektur?
 
 Der Service selbst wird durch einen **Service Provider** bereitgestellt. Diesem steht es frei, wie der Service implementiert wird, jedoch muss der Service Provider eine wohldefinierte Dienstbeschreibung bereitstellen, welche die Schnittstelle des Services beschreibt.
 
@@ -47,7 +49,7 @@ Als zusätzlicher Teilnehmer kann ein **Service Broker** als zentrales Verzeichn
 Betrachten wir alle drei Teilnehmer in einem Bild, so wird vom Service Provider ein Service bereitgestellt. Der Service Provider veröffentlicht eine Dienstbeschreibung über den Service Broker, worüber der Service Consumer den Dienst auffinden und schlussendlich durch direkte Anfrage an den Dienst verwenden kann.
 
 
-## Was ist "Loose Coupling" (Lose Kopplung)?
+# Was ist "Loose Coupling" (Lose Kopplung)?
 
 In einer SOA werden Funktionalitäten in Diensten (Services) gekapselt. Durch die Interaktion mit der wohldefinierten Schnittstelle des Dienstes ist der Service Consumer nicht unmittelbar mit der Geschäftlogik verbunden, sondern lose an diese gekoppelt.
 Daraus resultiert, dass die Dienstimplementierung bzw. die Dienstfunktionalität für den Service-Consumer möglichst transparent gehalten werden soll, damit dieser entsprechend mit dem Dienst interagieren kann.
@@ -57,7 +59,7 @@ Das Prinzip der losen Kopplung dient der Förderung von Wiederverwendbarkeit, We
 Die lose Kopplung von Diensten bietet eine hohe Flexibilität bei der Austauschbarkeit der verwendeten Hintergrundressourcen. Über so genannte **Mapping Layer** kann hinter einer Schnittstelle ein zusammengesetzter Dienst verwendet werden. Dies ermöglicht die dynamische Einkopplung von neu entwickelten Diensten und eine optimierte Lastverteilung.
 
 
-## Welche Vorteile/Nachteile bringt SOA?
+# Welche Vorteile/Nachteile bringt SOA?
 
 SOA erleichtert die Entwicklung von großen Unternehmenssystemen mit Fokus auf die Skalierbarkeit, Verteilbarkeit, Weiterentwicklung und Wartbarkeit. SOA ermöglicht zudem die Orientierung an Geschäftsprozessen eines Unternehmens und ermöglicht die Interoperabilität (Zusammenarbeit unterschiedlicher funktioneller Systeme). Durch das einfache Anbieten, Suchen und Nutzen von Diensten über vernetzte Dienstverzeichnisse können durch die Zusammenarbeit von unterschiedlichen Domänen Kosten eingespart werden.
 
