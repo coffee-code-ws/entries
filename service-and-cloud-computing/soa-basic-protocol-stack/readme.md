@@ -21,7 +21,7 @@ In der Gesamtheit des Systems müssen folgende Kriterien erfüllt sein:
 
 SOAP (ursprünglich **S**imple **O**bject **A**ccess **P**rotocol) ist ein Protokoll für den Nachrichtenaustausch in Web Service Architekturen. Der ursprüngliche Name des Protokolls stammt daher, dass Anfragen (im Unterschied zu REST) über so genannte Proxy-Objekte getätigt werden, welche als technische Schnittstelle für den Informationsaustausch dienen. Diese Art des Zugriffs nennt man **R**emote **P**rocedure **C**all (Akronym: RPC), da die verwendeten Proxy-Objekte entfernte Methoden eines Web Services verfügbar machen.
 
-SOAP setzt auf vorhandenen Protokollen auf (HTTP, HTTPS, SMTP, FTP, WebSockets ...) und nutzt somit die bestehende Infrastruktur des Internets.
+SOAP setzt auf vorhandenen Protokollen auf (HTTP, HTTPS, SMTP, FTP, ...) und nutzt somit die bestehende Infrastruktur des Internets.
 
 ## Aufbau von SOAP-Nachrichten
 
