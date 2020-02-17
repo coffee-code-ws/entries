@@ -103,9 +103,9 @@ Stellen wir uns einen hypothetischen Dienst einer Hotelbuchung vor, den wir nun 
 
 Unsere WSDL-Beschreibung könnte dann ungefähr wie im folgenden Schema aussehen, wobei wir noch Protokolle und Formate in einem `Binding` definieren und unsere Service-Definition unter dem `Service` Knoten eintragen:
 ```xml
-<?xml version="1.0">
+<?xml version="1.0"?>
 <wsdl:definitions
-    xmlns:"http://schemas.xmlsoap.org/wsdl/"
+    xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/"
     name="HotelBooking"
     targetNamespace="urn:HotelBooking">
     <wsdl:documentation ... />
