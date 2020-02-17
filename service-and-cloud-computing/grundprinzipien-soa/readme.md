@@ -6,6 +6,14 @@ Der Begriff SOA wurde durch das [**OASIS-Referenzmodell**](http://www.oasis-open
 Das Referenzmodell ist normativ, dient also als abstraktes Framework. Es enthält vereinheitlichte Konzepte, Grundsätze und Beziehungen innerhalb eines bestimmten Problemfeldes. Dadurch ist es prinzipiell unabhängig von spezifischen Standards, Technologien und Implementationen und hat weiterhin eine hohe Relevanz als Grundlage für die Entwicklung spezifischer Referenzen und konkreter Architekturen.
 
 
+## Abgrenzung zu anderen Architekturprinzipien
+
+Durch die inhärente Intuitivität und Allgemeinheit des konzeptuellen Begriffs SOA ist es aus heutiger Sicht eine nicht triviale Frage, welche anderen Architekturprinzipien hiervon abgegrenzt werden können, weil sich SOA als natürliches Architekturmuster in vielen Bereichen etabliert hat (und z.T. als selbstverständlich betrachtet wird):
+
+- Punkt-zu-Punkt Integration verbindet die einzelnen Dienstteilnehmer untereinander über jeweils eine invididuelle Schnittstelle, wodurch n*m Schnittstellen notwendig werden.
+- Unter EAI (**E**nterprise **A**pplication **I**ntegration) werden die einzelnen Dienstteilnehmer über einen zentralen Message-Bus (auch: Middleware) verbunden, wodurch statt n*m nur noch jeweils eine Schnittstelle zur Middleware notwendig ist.
+
+
 ## Was sind Services?
 
 Ein **Service** ist ein Mechanismus, der den Zweck hat, die Nutzung einer oder mehreren Fähigkeiten über eine wohldefinierte Schnittstelle zu ermöglichen. Die Schnittstelle muss konsistent zu den Anforderungen und Richtlinien in der Dienstbeschreibung sein. Die Dienstbeschreibung wird hierbei als verbindlicher Vertrag zwischen dem Service User und dem Service Provider betrachtet.
