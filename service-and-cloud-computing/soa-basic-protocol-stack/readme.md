@@ -88,20 +88,20 @@ Die **W**eb **S**ervices **D**escription **L**anguage wird ihrem deskriptiven Na
 
 Eine WSDL-Beschreibung (`<wsdl:definition>`) enthält 6 Hauptelemente:
 
-- `<wsdl:service>` (Service): enthält eine Menge von Endpoints
-- `<wsdl:port>` (Endpoint): enthält die Adresse für ein Binding
-- `<wsdl:binding>` (Binding): legt ein konkretes Protokoll und Datenformate für Operationen und Nachrichten eines Porttyps fest
-- `<wsdl:portType>` (Interface): eine Menge von abstrakten Operationen
-- `<wsdl:message>` (Message): eine abstrakte Beschreibung der Nachrichten
-- `<wsdl:types>` (Types): alle Datentypen, die zwischen Client und Server ausgetauscht werden
+- `<wsdl:service>` (**Service**): enthält eine Menge von Endpoints
+- `<wsdl:port>` (**Endpoint**): enthält die Adresse für ein Binding
+- `<wsdl:binding>` (**Binding**): legt ein konkretes Protokoll und Datenformate für Operationen und Nachrichten eines Porttyps fest
+- `<wsdl:portType>` (**Interface**): eine Menge von abstrakten Operationen
+- `<wsdl:message>` (**Message**): eine abstrakte Beschreibung der Nachrichten
+- `<wsdl:types>` (**Types**): alle Datentypen, die zwischen Client und Server ausgetauscht werden
 
-Die Beschreibung lässt sich entsprechend den oben genannten Bestandteilen in Deklarationen der **Konkreten Implementierung** (`Service`, `Endpoint`, `Binding`) und Deklarationen für ein **abstraktes Interface** (`Interface`, `Message`, `Types`) unterteilen.
+Die Beschreibung lässt sich entsprechend den oben genannten Bestandteilen in Deklarationen der **Konkreten Implementierung** (**Service**, **Endpoint**, **Binding**) und Deklarationen für ein **abstraktes Interface** (**Interface**, **Message**, **Types**) unterteilen.
 
 ## Konkrete Vorgehensweise zur Erstellung einer WSDL-Beschreibung
 
-Stellen wir uns einen hypothetischen Dienst einer Hotelbuchung vor, den wir nun in einer `hotelbooking.wsdl` beschreiben möchten. Dann identifizieren und definieren wir zunächst die benötigten Datenstrukturen (`Types`). Auf Grundlage dessen können entsprechende Nachrichten (`Messages`), jeweils unterteilt in `Parts` (Parameter eines bestimmten Typs), definieren, welche vom Service entgegengenommen werden bzw. zurückgesendet werden. Wir senden diese Nachrichten über die Interaktion mit bestimmten `Operationen` nach einem bestimmten **M**essage **E**xchange **P**attern (Akronym: MEP). Diese Operationen gruppieren wir zu einer abstrakten Definition als `Interface`.
+Stellen wir uns einen hypothetischen Dienst einer Hotelbuchung vor, den wir nun in einer `hotelbooking.wsdl` beschreiben möchten. Dann identifizieren und definieren wir zunächst die benötigten Datenstrukturen (**Types**). Auf Grundlage dessen können entsprechende Nachrichten (**Messages**), jeweils unterteilt in **Parts** (Parameter eines bestimmten Typs), definieren, welche vom Service entgegengenommen werden bzw. zurückgesendet werden. Wir senden diese Nachrichten über die Interaktion mit bestimmten **Operationen** nach einem bestimmten **M**essage **E**xchange **P**attern (Akronym: MEP). Diese Operationen gruppieren wir zu einer abstrakten Definition als **Interface**.
 
-Unsere WSDL-Beschreibung könnte dann ungefähr wie im folgenden Schema aussehen, wobei wir noch Protokolle und Formate in einem `Binding` definieren und unsere Service-Definition unter dem `Service` Knoten eintragen:
+Unsere WSDL-Beschreibung könnte dann ungefähr wie im folgenden Schema aussehen, wobei wir noch Protokolle und Formate in einem **Binding** definieren und unsere Service-Definition unter dem **Service** Knoten eintragen:
 ```xml
 <?xml version="1.0"?>
 <wsdl:definitions
