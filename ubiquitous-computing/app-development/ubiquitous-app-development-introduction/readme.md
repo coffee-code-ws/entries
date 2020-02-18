@@ -1,6 +1,6 @@
 [TOC]
 
-# What are "Mobile Computing", "Ubiquitous Computing" and "Pervasive Computing"?
+# What is "Mobile Computing", "Ubiquitous Computing" and "Pervasive Computing"?
 
 Research on mobile computing started around 1980 with the initial goal to enable users of mobile applications to experience an equivalent quality of service as found with stationary devices.
 With the need for information anytime and anywhere emerged **mobile computing as a technical enablement of mobile access** through the integration of wireless networks into existing wired infrastructures and the availability of portable or mobile devices.
@@ -13,7 +13,7 @@ The relevant aspects of mobility are:
 
 Mobile computing is no new concept. Most applications depend on the availability of information to provide a seamless, interoperable and location-independent experience.
 
-Nowadays, people own, use and share multiple personal devices (e.g. laptops, smartphones, tablets, wearables) simultaneously. The market on stationary desktop devices has shrinked significantly due to the increase in use of handheld devices. Small devices are equipped with sensors and embedded into things of daily live. Consequently, with these abilities to sense the environment in the background of the users attention, it is now possible for applications to sense and react to the environmental changes, which makes them **context-aware**.
+Nowadays, people own, use and share multiple personal devices (e.g. laptops, smartphones, tablets, wearables) simultaneously. The market on stationary desktop devices has shrinked significantly due to the increase in use of handheld devices. Small devices are equipped with sensors and embedded into things of daily life. Consequently, with these abilities to sense the environment in the background of the users attention, it is now possible for applications to sense and react to the environmental changes, which makes them **context-aware**.
 The paradigm **ubiquitous computing** takes these preconditions to serve **the right service, at the right place, at the right time**.
 
 In this domain, the term **pervasive computing** stands for a pragmatic, industry driven perspective. It describes the integration of computing technology directly into business processes and subsequently the generation of new (mobile) business areas.
