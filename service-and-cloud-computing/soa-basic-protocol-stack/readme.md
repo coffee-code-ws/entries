@@ -86,14 +86,14 @@ Die **W**eb **S**ervices **D**escription **L**anguage wird ihrem deskriptiven Na
 
 ## Aufbau einer WSDL-Beschreibung
 
-Eine WSDL-Beschreibung enthält 6 Hauptelemente:
+Eine WSDL-Beschreibung (`<wsdl:definition>`) enthält 6 Hauptelemente:
 
-- `Service`: enthält eine Menge von Endpoints
-- `Endpoint`: enthält die Adresse für ein Binding
-- `Binding`: legt ein konkretes Protokoll und Datenformate für Operationen und Nachrichten eines Porttyps fest
-- `Interface`: eine Menge von abstrakten Operationen
-- `Message`: eine abstrakte Beschreibung der Nachrichten
-- `Types`: alle Datentypen, die zwischen Client und Server ausgetauscht werden
+- `<wsdl:service>` (Service): enthält eine Menge von Endpoints
+- `<wsdl:port>` (Endpoint): enthält die Adresse für ein Binding
+- `<wsdl:binding>` (Binding): legt ein konkretes Protokoll und Datenformate für Operationen und Nachrichten eines Porttyps fest
+- `<wsdl:portType>` (Interface): eine Menge von abstrakten Operationen
+- `<wsdl:message>` (Message): eine abstrakte Beschreibung der Nachrichten
+- `<wsdl:types>` (Types): alle Datentypen, die zwischen Client und Server ausgetauscht werden
 
 Die Beschreibung lässt sich entsprechend den oben genannten Bestandteilen in Deklarationen der **Konkreten Implementierung** (`Service`, `Endpoint`, `Binding`) und Deklarationen für ein **abstraktes Interface** (`Interface`, `Message`, `Types`) unterteilen.
 
