@@ -21,7 +21,7 @@ In der Gesamtheit des Systems müssen folgende Kriterien erfüllt sein:
 
 SOAP (ursprünglich **S**imple **O**bject **A**ccess **P**rotocol) ist ein Protokoll für den Nachrichtenaustausch in Web Service Architekturen. Der ursprüngliche Name des Protokolls stammt daher, dass Anfragen (im Unterschied zu REST) über so genannte Proxy-Objekte getätigt werden, welche als technische Schnittstelle für den Informationsaustausch dienen. Diese Art des Zugriffs nennt man **R**emote **P**rocedure **C**all (Akronym: RPC), da die verwendeten Proxy-Objekte entfernte Methoden eines Web Services verfügbar machen.
 
-SOAP setzt auf vorhandenen Protokollen auf (HTTP, HTTPS, SMTP, FTP, WebSockets ...) und nutzt somit die bestehende Infrastruktur des Internets.
+SOAP setzt auf vorhandenen Protokollen auf (HTTP, HTTPS, SMTP, FTP, ...) und nutzt somit die bestehende Infrastruktur des Internets.
 
 ## Aufbau von SOAP-Nachrichten
 
@@ -86,22 +86,22 @@ Die **W**eb **S**ervices **D**escription **L**anguage wird ihrem deskriptiven Na
 
 ## Aufbau einer WSDL-Beschreibung
 
-Eine WSDL-Beschreibung enthält 6 Hauptelemente:
+Eine WSDL-Beschreibung (`<wsdl:definition>`) enthält 6 Hauptelemente:
 
-- `Service`: enthält eine Menge von Endpoints
-- `Endpoint`: enthält die Adresse für ein Binding
-- `Binding`: legt ein konkretes Protokoll und Datenformate für Operationen und Nachrichten eines Porttyps fest
-- `Interface`: eine Menge von abstrakten Operationen
-- `Message`: eine abstrakte Beschreibung der Nachrichten
-- `Types`: alle Datentypen, die zwischen Client und Server ausgetauscht werden
+- `<wsdl:service>` (**Service**): enthält eine Menge von Endpoints
+- `<wsdl:port>` (**Endpoint**): enthält die Adresse für ein Binding
+- `<wsdl:binding>` (**Binding**): legt ein konkretes Protokoll und Datenformate für Operationen und Nachrichten eines Porttyps fest
+- `<wsdl:portType>` (**Interface**): eine Menge von abstrakten Operationen
+- `<wsdl:message>` (**Message**): eine abstrakte Beschreibung der Nachrichten
+- `<wsdl:types>` (**Types**): alle Datentypen, die zwischen Client und Server ausgetauscht werden
 
-Die Beschreibung lässt sich entsprechend den oben genannten Bestandteilen in Deklarationen der **Konkreten Implementierung** (`Service`, `Endpoint`, `Binding`) und Deklarationen für ein **abstraktes Interface** (`Interface`, `Message`, `Types`) unterteilen.
+Die Beschreibung lässt sich entsprechend den oben genannten Bestandteilen in Deklarationen der **Konkreten Implementierung** (**Service**, **Endpoint**, **Binding**) und Deklarationen für ein **abstraktes Interface** (**Interface**, **Message**, **Types**) unterteilen.
 
 ## Konkrete Vorgehensweise zur Erstellung einer WSDL-Beschreibung
 
-Stellen wir uns einen hypothetischen Dienst einer Hotelbuchung vor, den wir nun in einer `hotelbooking.wsdl` beschreiben möchten. Dann identifizieren und definieren wir zunächst die benötigten Datenstrukturen (`Types`). Auf Grundlage dessen können entsprechende Nachrichten (`Messages`), jeweils unterteilt in `Parts` (Parameter eines bestimmten Typs), definieren, welche vom Service entgegengenommen werden bzw. zurückgesendet werden. Wir senden diese Nachrichten über die Interaktion mit bestimmten `Operationen` nach einem bestimmten **M**essage **E**xchange **P**attern (Akronym: MEP). Diese Operationen gruppieren wir zu einer abstrakten Definition als `Interface`.
+Stellen wir uns einen hypothetischen Dienst einer Hotelbuchung vor, den wir nun in einer `hotelbooking.wsdl` beschreiben möchten. Dann identifizieren und definieren wir zunächst die benötigten Datenstrukturen (**Types**). Auf Grundlage dessen können entsprechende Nachrichten (**Messages**), jeweils unterteilt in **Parts** (Parameter eines bestimmten Typs), definieren, welche vom Service entgegengenommen werden bzw. zurückgesendet werden. Wir senden diese Nachrichten über die Interaktion mit bestimmten **Operationen** nach einem bestimmten **M**essage **E**xchange **P**attern (Akronym: MEP). Diese Operationen gruppieren wir zu einer abstrakten Definition als **Interface**.
 
-Unsere WSDL-Beschreibung könnte dann ungefähr wie im folgenden Schema aussehen, wobei wir noch Protokolle und Formate in einem `Binding` definieren und unsere Service-Definition unter dem `Service` Knoten eintragen:
+Unsere WSDL-Beschreibung könnte dann ungefähr wie im folgenden Schema aussehen, wobei wir noch Protokolle und Formate in einem **Binding** definieren und unsere Service-Definition unter dem **Service** Knoten eintragen:
 ```xml
 <?xml version="1.0"?>
 <wsdl:definitions
