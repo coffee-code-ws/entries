@@ -1,3 +1,4 @@
+[TOC]
 
 # How to predict location based search queries in iOS (Swift Tutorial) - the simple way
 
