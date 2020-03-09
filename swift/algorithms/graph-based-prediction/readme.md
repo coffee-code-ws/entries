@@ -1,13 +1,11 @@
 
 # How to predict location based search queries in iOS (Swift Tutorial) - the simple way
 
-TL;DR: [Download Graph.swift and read its documentation 😉](Graph.swift)
+TL;DR: [Download Graph.swift and read its documentation 😉](./Graph.swift)
 
 Let's say you have an application, in which you have a selection of places, such as bus stops, cities, addresses or similar. And you want to know, which place the user searches next. This comes in handy, for example, when you want to show that search right away when a user opens the associated view.
 
-<p align="center">
-  <img width="281" height="609" alt="Manni-Screenshot" src="screenshot.jpg">
-</p>
+![Manni-Screenshot](./screenshot.jpg)
 
 My App "[Manni](https://apps.apple.com/de/app/manni/id1347527695)" does exactly this. But how?
 
@@ -16,9 +14,7 @@ My App "[Manni](https://apps.apple.com/de/app/manni/id1347527695)" does exactly 
 
 Machine Learning is cool and all, but for this simple task, we have another really simple and suitable approach: **using a Graph**.
 
-<p align="center">
-  <img width="558" height="251" alt="Example Graph Image" src="explanation.png">
-</p>
+![Example Graph Image](./explanation.png)
 
 Let's say you search for the **Airport** and then you search for the **City Center**. In this case, we can assume, that you travelled from the **Airport** to the **City Center**. So when you search for **Airport** the next time, we simply look into our graph, which locations came after **Airport**, in this case the **City Center**. Keep in mind, that this assumption is not always true, for example because a user could also skip a search. But for the substantial part, this idea is accurate enough to sufficiently predict future queries.
 
@@ -100,7 +96,7 @@ If a user visits a location, this location is interpreted as the `destination` o
 
 ## Let's test this
 
-You can download [Graph.swift here](Graph.swift) and try this out yourself:
+You can download [Graph.swift here](./Graph.swift) and try this out yourself:
 
 ```swift
 var graph = RouteGraph()
