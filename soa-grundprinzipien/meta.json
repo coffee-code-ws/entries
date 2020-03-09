@@ -1,5 +1,6 @@
 {
   "title": "Grundprinzipien von SOA",
   "description": "Definition SOA, OASIS-Referenzmodell, Services, Sichtbarkeit, Interaktion und Wirkung, Teilnehmer, Lose Kopplung, Vor- und Nachteile von SOA",
-  "authors": "Philipp Matthes"
+  "authors": "Philipp Matthes",
+  "tags": "soa, grundprinzipien, oasis, referenzmodell, services, sichtbarkeit, interaktion, wirkung, lose kopplung, vorteile, nachteile"
 }
