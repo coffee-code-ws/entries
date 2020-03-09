@@ -1,7 +1,5 @@
 [TOC]
 
-# How to predict location based search queries in iOS (Swift Tutorial) - the simple way
-
 TL;DR: [Download Graph.swift and read its documentation 😉](attachments/Graph.swift)
 
 Let's say you have an application, in which you have a selection of places, such as bus stops, cities, addresses or similar. And you want to know, which place the user searches next. This comes in handy, for example, when you want to show that search right away when a user opens the associated view.
