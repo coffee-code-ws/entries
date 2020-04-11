@@ -1,0 +1,6 @@
+{
+    "title": "SwiftUI Snippet: Adding fullscreen backgrounds to SwiftUI views without overriding their Safe Area",
+    "description": "Learn to add a fullscreen background to any SwiftUI view without overriding its safe area.",
+    "authors": "Philipp Matthes",
+    "tags": "swiftui, safe, area, background, iOS, tutorial"
+  }
