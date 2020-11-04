@@ -20,6 +20,6 @@ jobs:
           SECRET_GITLOAD_TOKEN: ${{ secrets.SECRET_GITLOAD_TOKEN }}
         run: |
           curl \
-          -d '{"token_value":"$SECRET_GITLOAD_TOKEN"}' \
+          -d '{"token_value":"'"$SECRET_GITLOAD_TOKEN"'"}' \
           -H "Content-Type: application/json" \
           -X POST https://xn--53hy230o.ws/gitload/trigger/
