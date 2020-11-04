@@ -17,9 +17,9 @@ jobs:
       # to indicate a needed repo pull
       - name: Tigger a gitload on the website
         env:
-          secret_token: ${{ secrets.SECRET_GITLOAD_TOKEN }}
+          SECRET_GITLOAD_TOKEN: ${{ secrets.SECRET_GITLOAD_TOKEN }}
         run: |
           curl \
-          -d '{"token_value":"$secret_token"}' \
+          -d '{"token_value":"$SECRET_GITLOAD_TOKEN"}' \
           -H "Content-Type: application/json" \
           -X POST https://xn--53hy230o.ws/gitload/trigger/
