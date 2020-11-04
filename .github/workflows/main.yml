@@ -1,0 +1,25 @@
+name: Continuous Distribution
+
+
+on:
+  push:
+    branches: [ master ]
+
+
+jobs:
+  distribute:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+
+      # Dispatch a post request to the website 
+      # to indicate a needed repo pull
+      - name: Tigger a gitload on the website
+        env:
+          secret_token: ${{ secrets.SECRET_GITLOAD_TOKEN }}
+        run: |
+          curl \
+          -d '{"token_value":"$secret_token"}' \
+          -H "Content-Type: application/json" \
+          -X POST https://xn--53hy230o.ws/gitload/trigger/
