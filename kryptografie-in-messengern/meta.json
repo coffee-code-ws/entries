@@ -1,6 +1,7 @@
 {
     "title": "Vortrag: Kryptografie in Messengern",
     "description": "Wir haben einen Vortrag für OUTPUT.DD eingereicht zum Thema \"Kryptografie in Messengern\"!",
-    "authors": "Felix Kästner und Philipp Matthes",
-    "tags": "output.dd, vortrag, peerbridge, kryptografie, signal, protokoll, sicherheit, blockchain, messenger, adamant"
+    "authors": "Felix Kästner and Philipp Matthes",
+    "tags": "output.dd, vortrag, peerbridge, kryptografie, signal, protokoll, sicherheit, blockchain, messenger, adamant",
+    "thumbnail": "images/thumbnail.webp"
   }
