@@ -1,0 +1,7 @@
+{
+  "title": "Postprocessing FCRN Depth Maps on iOS Devices with Custom Filtering",
+  "description": "The FCRN neural network can be used to interpret depth maps on single-lens camera images. But how can we further improve the depth maps based on the intial photo?",
+  "authors": "Philipp Matthes",
+  "tags": "core image, filtering, postprocessing, fcrn, depth, prediction, on-device-ml, machine learning, smartphones, computer vision, 3d-ify, app, parallax occlusion mapping",
+  "thumbnail": "images/thumbnail.webp"
+}
