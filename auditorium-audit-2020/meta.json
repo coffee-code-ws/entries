@@ -1,0 +1,6 @@
+{
+    "title": "How I might have accidentally killed Auditorium",
+    "description": "In 2020 I played around with the Forum Auditorium and coincidentally might have killed the platform (which is now being rebuilt).",
+    "authors": "Philipp Matthes",
+    "tags": "security, vulnerabilities, audit, auditorium, xss, cross-site-scripting, tu dresden, forum, software reenginiering, technical debt"
+  }
